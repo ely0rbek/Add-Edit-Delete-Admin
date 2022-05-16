@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        Elyorbek_Shohrux
+    </title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+</head>
+<body>
+<div class="orqa2">
+    <table>
+        <tr>
+            <td class="salom">
+                <h1>Employee <span style="color: #4C545E; font-weight: 700;">Details</span> <button onclick="funk1()"><ion-icon name="add-outline"></ion-icon>Add New</button></h1>
+                <table class="list" id="employeeList">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Email Address</th>
+                            <th>Phone</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                </table>
+            </td>
+        </tr>
+    </table>
+</div>
+    <!--  -->
+    <div class="orqa1">
+        <svg onclick="document.getElementsByClassName('orqa1')[0].style.display='none';" style="position:relative;cursor:pointer; top: 10em; left: 69.5em; color:white" xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-x" viewBox="0 0 16 16">
+            <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
+          </svg>
+        <form onsubmit="event.preventDefault();onFormSubmit();document.getElementsByClassName('orqa1')[0].style.display='none'" autocomplete="off">
+            <div>
+                <label>Name*</label><label class="validation-error hide" id="fullNameValidationError">This field is required.</label>
+                <input type="text" name="fullName" id="fullName">
+            </div>
+            <div>
+                <label>Email Address</label>
+                <input type="text" name="empCode" id="empCode">
+            </div>
+            <div>
+                <label>Phone</label>
+                <input type="text" name="salary" id="salary">
+            </div>
+            <div  class="form-action-buttons">
+                <input type="submit" value="Edit" >
+            </div>
+        </form>
+    </div>
+    <!--  -->
+    <div style="text-align:center" class="orqa">
+        <svg onclick="document.getElementsByClassName('orqa')[0].style.display='none';" style="position:relative;cursor:pointer; top: 10em; left: 23.5em; color:white" xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-x" viewBox="0 0 16 16">
+            <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
+          </svg>
+        <table class="alik">
+            <h1  style="margin-top: 2.8em; color: white; text-shadow: 6px blue;">Add Admin</h1>
+        </table>
+    </div>
+    <!--  -->
+    <script src="script.js"></script>
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>
